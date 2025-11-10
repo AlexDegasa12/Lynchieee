@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Lynchieee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Playfair Display", serif;
+      background-color: #f9c9d3;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* HEADER */
+    header {
+      background-color: #f9c9d3;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 50px;
+    }
+
+    .logo {
+      font-family: "Pacifico", cursive;
+      font-size: 50px;
+      color: #6a3b0c;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      font-size: 22px;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: black;
+      transition: width 0.3s;
+    }
+
+    nav a:hover::after,
+    nav a.active::after {
+      width: 100%;
+    }
+
+    /* CONTACT SECTION */
+    .contact-section {
+      text-align: center;
+      padding: 50px 100px;
+    }
+
+    .contact-section h2 {
+      color: #6a3b0c;
+      font-size: 36px;
+      font-family: "Fredoka One", cursive;
+    }
+
+    .contact-section p {
+      font-size: 20px;
+      color: black;
+      margin-top: -10px;
+    }
+
+    .contact-section a {
+      color: #0047ab;
+      text-decoration: none;
+    }
+
+    form {
+      margin-top: 40px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      align-items: center;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 40px;
+      width: 80%;
+      justify-content: center;
+    }
+
+    label {
+      font-size: 20px;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .input-group {
+      background-color: #6a3b0c;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      color: white;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .input-group input,
+    .input-group textarea {
+      background: none;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 16px;
+      width: 100%;
+      font-family: "Playfair Display", serif;
+    }
+
+    textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    .counter {
+      font-size: 16px;
+      color: white;
+      text-align: right;
+      margin-top: 5px;
+      margin-right: 15px;
+    }
+
+    /* SUBMIT BUTTON */
+    .submit-btn {
+      background-color: #6a3b0c;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: "Playfair Display", serif;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background-color: #4a2606;
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #c79b84;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      color: black;
+    }
+
+    footer a {
+      color: #0047ab;
+      text-decoration: none;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin: 10px 0;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 22px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1 class="logo">LYNCHIEEE</h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="Lynchieee_Home.html">Home</a></li>
+        <li><a class="active" href="Lynchieee_About_us.html">About us</a></li>
+        <li><a class="active" href="Lynchieee_Meaning.html">Meaning</a></li>
+        <li><a class="active" href="Lynchieee_Product.html">Products</a></li>
+        <li><a class="active" href="Lynchieee_Contact_us.html">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <h2>Let's Get In Touch.</h2>
+    <p>Or just reach out manually to <a href="mailto:alexdegasa@gmail.com">alexdegasa@gmail.com</a></p>
+
+    <form>
+      <div class="form-row">
+        <div class="field">
+          <label>First Name</label>
+          <div class="input-group">👤 <input type="text" placeholder="Enter your First Name..." /></div>
+        </div>
+
+        <div class="field">
+          <label>Last Name</label>
+          <div class="input-group">👤 <input type="text" placeholder="Enter your Last Name..." /></div>
+        </div>
+      </div>
+
+      <div class="field" style="width: 80%;">
+        <label>Email Address</label>
+        <div class="input-group">📧 <input type="email" placeholder="Enter your Email Address..." /></div>
+      </div>
+
+      <div class="field" style="width: 80%;">
+        <label>Message</label>
+        <div class="input-group">
+          <textarea placeholder="Enter your your main text here..."></textarea>
+        </div>
+        <div class="counter">300/300</div>
+      </div>
+
+      <!-- SUBMIT BUTTON -->
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="quote">“Donde florecen las flores, también lo hace la esperanza.”</p>
+    <div class="footer-links">
+      <p>© 2025 Lynchieee</p>
+      <p>🌐 Alex Degasa</p>
+      <p>📧 <a href="mailto:alexdegasa2006@gmail.com">alexdegasa2006@gmail.com</a></p>
+      <p><a href="Lynchieee_Home.html">Home</a></p>
+    </div>
+  </footer>
+</body>
+</html>
