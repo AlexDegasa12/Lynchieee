@@ -44,7 +44,7 @@
   color: black;
   font-size: 22px;
   font-weight: 600;
-  position: relative; /* important for ::after positioning */
+  position: relative; 
 }
 
 nav a::after {
@@ -68,14 +68,13 @@ nav a.active::after {
   display: flex;
   align-items: stretch;
   gap: 0;
-  background-color: #f4b8da; /* lighter pink, same as Meaning page */
+  background-color: #f4b8da; 
 }
 
     .text-box {
-    flex: 0 0 60%;          /* take ~60% width (adjust as needed) */
+    flex: 0 0 60%;         
     box-sizing: border-box;
-    padding: 60px;          /* keep text padding here */
-}
+    padding: 60px;          
     .title {
         font-family: "Kalam", cursive;
         font-size: 36px;
@@ -97,18 +96,17 @@ nav a.active::after {
     }
 
     .image-box {
-    flex: 1;                /* takes remaining width */
-    padding: 0;             /* IMPORTANT: remove padding so image meets edges */
+    flex: 1;                
+    padding: 0;             
     display: block;
-    overflow: hidden;       /* crop overflow when object-fit needs it */
+    overflow: hidden;      
 }
 
 .image-box img {
     width: 100%;
     height: 100%;
-    display: block;         /* removes inline gap from images */
-    object-fit: cover;      /* cover entire box, preserve aspect ratio */
-}
+    display: block;         
+    object-fit: cover;      
     /* FOOTER */
     footer {
       background-color: #c29d93;
@@ -179,7 +177,7 @@ nav a.active::after {
 
 </div>
 
-<!-- QUOTE -->
+
 <footer>
     <p>“Donde florecen las flores, también lo hace la esperanza.”</p>
 

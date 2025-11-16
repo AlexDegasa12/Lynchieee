@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background-color: #f4b8da; /* Light pink background */
+  background-color: #f4b8da; 
 }
 
 /* HEADER */
@@ -40,7 +40,7 @@ nav ul li a {
   color: black;
   font-weight: 700;
   font-size: 18px;
-  position: relative; /* kailangan para gumana ang ::after */
+  position: relative; 
 }
 
 nav ul li a::after {
