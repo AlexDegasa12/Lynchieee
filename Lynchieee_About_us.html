@@ -1,54 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us - Lynchieee</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lynchieee - About Us</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Satisfy&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Playfair Display", serif;
+        background-color: #f4b8da;
+    }
+
+    /* NAVIGATION BAR */
+    header {
+        background: #f9cee7;
+        padding: 20px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-family: "Lucida Handwriting", cursive;
+        font-size: 48px;
+        color:#8b4513;
+    }
+
+    nav a {
+        margin-left: 30px;
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative; /* important for ::after positioning */
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+    /* MAIN SECTION */
+    .about-container {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background-color: #f4b8da; /* lighter pink, same as Meaning page */
+}
+
+    .text-box {
+    flex: 0 0 60%;          /* take ~60% width (adjust as needed) */
+    box-sizing: border-box;
+    padding: 60px;          /* keep text padding here */
+}
+    .title {
+        font-family: "Kalam", cursive;
+        font-size: 36px;
+        color: #70391f;
+        margin-bottom: 25px;
+    }
+
+    .desc {
+        font-size: 24px;
+        line-height: 1.6;
+        color: #3b1f17;
+    }
+
+    .names {
+        margin-top: 40px;
+        font-size: 34px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .image-box {
+    flex: 1;                /* takes remaining width */
+    padding: 0;             /* IMPORTANT: remove padding so image meets edges */
+    display: block;
+    overflow: hidden;       /* crop overflow when object-fit needs it */
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    display: block;         /* removes inline gap from images */
+    object-fit: cover;      /* cover entire box, preserve aspect ratio */
+}
+    /* FOOTER */
+    footer {
+      background-color: #c29d93;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      color: black;
+    }
+
+    footer a {
+      color: #0047ab;
+      text-decoration: none;
+    }
+
+    footer img {
+      width: 25px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 22px;
+      margin: 15px 0;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin: 10px 0;
+    }
+
+</style>
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header>
-    <h1 class="logo">LYNCHIEEE</h1>
+
+<header>
+    <div class="logo">LYNCHIEEE</div>
     <nav>
-      <ul>
-        <li><a href="Lynchieee_Home.html">Home</a></li>
-        <li><a class="active" href="Lynchieee_About_us.html">About us</a></li>
-        <li><a class="active"href="Lynchieee_Meaning.html">Meaning</a></li>
-        <li><a href="Lynchieee_Product.html">Products</a></li>
-        <li><a href="Lynchieee_Contact_us.html">Contact us</a></li>
-      </ul>
+        <a href="Lynchieee_Home.html">Home</a>
+        <a href="Lynchieee_About_us.html" class="active">About us</a>
+        <a href="Lynchieee_Meaning.html">Meaning</a>
+        <a href="Lynchieee_Product.html">Products</a>
+        <a href="Lynchieee_Contact_us.html">Contact us</a>
     </nav>
-  </header>
+</header>
 
-  <!-- HERO SECTION (same as home structure) -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2 class="about-title">WHAT IS LYNCHIEEE?</h2>
-      <p>
-        Lynchieee is a flower shop dedicated to celebrating love and meaning.
-        Every bloom we offer carries a story, carefully chosen to match your
-        emotions. We guarantee fresh, vibrant flowers — perfect for your loved
-        ones, every time.
-      </p>
-      <p class="author about-names">Alex and Zekiah</p>
-    </div>
-    <div class="hero-image">
-      <img src="https://i.imgur.com/Yy8gHhS.jpeg" alt="Couple photo" />
-    </div>
-  </section>
+<!-- MAIN CONTENT -->
+<div class="about-container">
 
-  <!-- FOOTER -->
-  <footer>
-    <p class="quote">“Donde florecen las flores, también lo hace la esperanza.”</p>
-    <div class="footer-info">
-      <p>© 2025 Lynchieee</p>
-      <p>🌐 Alex Degasa</p>
-      <p>📧 <a href="mailto:alexdegasa2006@gmail.com">alexdegasa2006@gmail.com</a></p>
-      <p><a href="Lynchieee_Home.html">Home</a></p>
+    <div class="text-box">
+        <div class="title">WHAT IS LYNCHIEEE?</div>
+
+        <p class="desc">
+            Lynchieee is a flower shop dedicated to celebrating love and meaning. Every bloom we offer carries a story, carefully chosen
+            to match your emotions. We guarantee fresh, vibrant flowers — perfect for your loved ones, every time.
+        </p>
+
+        <div class="names">Alex and Zekiah</div>
     </div>
-  </footer>
+
+    <div class="image-box">
+        <img src="Couple Picture.jpg" alt="About Us Image">
+    </div>
+
+</div>
+
+<!-- QUOTE -->
+<footer>
+    <p>“Donde florecen las flores, también lo hace la esperanza.”</p>
+
+    <div class="footer-links">
+        <p>© 2025 Lynchieee</p>
+        <img src="Facebook_Logo_2023.png" alt="Facebook">
+      <a href="#">Alex Degasa</a>
+        <img src="Email3.jpg" alt="Email">
+      <a href="mailto:alexdegasa2006@gmail.com">alexdegasa2006@gmail.com</a>
+       <p><a href="Lynchieee_Home.html">Home</a></p>
+    </div>
+</footer>
+
 </body>
 </html>

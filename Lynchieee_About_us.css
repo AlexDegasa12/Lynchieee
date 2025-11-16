@@ -1,0 +1,36 @@
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-text {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.about-text h2 {
+  margin-bottom: 1rem;
+}
+
+.about-text .quote {
+  font-style: italic;
+  color: #666;
+}

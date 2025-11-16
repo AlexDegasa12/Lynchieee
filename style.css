@@ -6,12 +6,12 @@
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  background-color: #f5d3df;
+  background-color: #f4b8da;
 }
 
 /* HEADER */
 header {
-  background-color: #f5c6d4;
+  background-color: #f9cee7;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-  font-family: 'Pacifico', cursive;
+  font-family: "Lucida Handwriting", cursive;
   color: #8b4513;
   font-size: 45px;
   margin: 0;
@@ -40,15 +40,34 @@ nav ul li a {
   font-size: 18px;
 }
 
-nav ul li a.active {
-  border-bottom: 2px solid black;
-  padding-bottom: 2px;
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
 }
 
 /* MAIN CONTENT */
 .main {
   display: flex;
-  background-color: #f8bcd3;
+  background-color: #f4b8da;
 }
 
 .left {
@@ -94,30 +113,38 @@ nav ul li a.active {
 
 /* FOOTER */
 footer {
-  background-color: #c59a86;
-  color: black;
-  text-align: center;
-  padding: 30px 10px;
-}
+      background-color: #c29d93;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      color: black;
+    }
 
-footer .quote {
-  font-size: 20px;
-  font-style: italic;
-  margin-bottom: 25px;
-}
+    footer a {
+      color: #0047ab;
+      text-decoration: none;
+    }
 
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  font-size: 16px;
-}
+    footer img {
+      width: 25px;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
 
-.footer-links a {
-  text-decoration: none;
-  color: #0b61d0;
-}
+    .quote {
+      font-style: italic;
+      font-size: 22px;
+      margin: 15px 0;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin: 10px 0;
+    }
+
 /* --- ABOUT PAGE EXTRAS --- */
 .about-title {
   color: #8b4513;
@@ -131,3 +158,4 @@ footer .quote {
   font-weight: 700;
   font-size: 26px;
 }
+
