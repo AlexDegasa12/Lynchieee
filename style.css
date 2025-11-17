@@ -212,7 +212,7 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 15px;
-      margin: 10px 0;
+      margin: 20px 0;
     }
 /* --- ABOUT PAGE EXTRAS --- */
 .about-title {
@@ -227,6 +227,7 @@ footer {
   font-weight: 700;
   font-size: 26px;
 }
+
 
 
 
