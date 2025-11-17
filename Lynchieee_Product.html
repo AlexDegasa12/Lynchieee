@@ -113,6 +113,43 @@
       gap: 15px;
       margin: 10px 0;
     }
+    .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.product-item {
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-item {
+    width: 90%;
+  }
+
+  .product-item h3 {
+    font-size: 22px;
+  }
+
+  .product-item p {
+    font-size: 24px;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -164,3 +201,4 @@
 
 </body>
 </html>
+
